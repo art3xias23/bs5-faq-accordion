@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- displays site properly based on user's device -->
 
     <link
@@ -49,16 +49,26 @@
         height: 100%;
       }
 
+      .faq-text{
+        font-size:50px;
+      }
+
       .card-container {
         position:absolute;
         top:200px;
         background-color: white;
-        max-width:400px;
+        min-width:0px;
+        max-width: 450px;
+      }
+
+      .c-min-container{
+        height:100%;
       }
 
       .image-1 {
-        width: 25px;
-        height: 10px;
+        margin-top:7px;
+        width: 27px;
+        height: 25px;
         margin-left: 20px;
       }
 
@@ -72,7 +82,7 @@
       }
 
       .acc-header {
-        font-size: 10px;
+        font-size: 12px;
         font-weight: 700;
       }
       .acc-body {
@@ -101,7 +111,7 @@
 
       @media(max-width:576px){
         .card-container{
-          width:90%;
+          width:75%;
         }
 
         .faq-text{
@@ -116,7 +126,7 @@
       <div class="custom-image-background">
         <div class="d-flex justify-content-center align-items-center">
           <div class="card card-container">
-            <div class="card-body d-flex flex-column pt-3">
+            <div class="card-body d-flex flex-column pt-3 c-min-container">
               <div class="card-title">
                 <div class="row">
                   <div class="col-2">
@@ -128,7 +138,7 @@
                     </div>
                   </div>
                   <div class="col-10 ">
-                    <div class="faq-text h1 fw-bold fs-5 d-flex justify-content-start overflow-hidden">
+                    <div class="faq-text h1 fw-bold fs-2 d-flex justify-content-start overflow-hidden">
                       FAQs
                     </div>
                   </div>
