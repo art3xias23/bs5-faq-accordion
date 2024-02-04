@@ -56,6 +56,13 @@
         bottom: 20%;
       }
 
+      .image-1{
+        width:25px;
+        height:25px;
+        margin-left:20px;
+        margin-top:7px;
+      }
+
       .card-content {
         margin: 0%;
         padding: 0%;
@@ -86,6 +93,12 @@
       content:url(assets/images/icon-plus.svg);
       transform:none !important;
      }
+.accordion{
+  --bs-accordion-btn-focus-box-shadow:none !important;
+}
+     .accordion-header{
+      --bs-accordion-active-bg: none !important;
+     }
     </style>
   </head>
   <body>
@@ -99,7 +112,7 @@
           <div class="card-title">
             <div class="row">
               <div class="col-md-2 col-sm-1">
-                <img class="img" src="assets/images/icon-star.svg" />
+                <div class="image-1"><img class="img-fluid" src="assets/images/icon-star.svg" /></div>
               </div>
               <div class="col-md-10 col-sm-11">
                 <div class="h1 fw-bold d-flex justify-content-start">FAQs</div>
@@ -110,19 +123,19 @@
             <div class="accordion" id="example">
               <div class="accordion-item">
                 <h2 class="accordion-header">
-                  <div
+                  <button
                     class="accordion-button collapsed acc-header"
                     data-bs-toggle="collapse"
                     data-bs-target="#accordionOne"
                   >
                     What is Frontend Mentor, and how will it help me?
-                  </div>
+                </button>
                 </h2>
                 <div
-                  class="accordion-collapse collapse acc-body"
+                  class="accordion-collapse collapse"
                   id="accordionOne"
                 >
-                  <p>
+                  <p class="acc-body">
                     Frontend Mentor offers realistic coding challenges to help
                     developers improve their frontend coding skills with
                     projects in HTML, CSS, and JavaScript. It's suitable for all
